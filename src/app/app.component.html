@@ -1,0 +1,16 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    {{ title }}
+  </h1>
+  <img width="100" alt="Leicester Logo" src="http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c4e8.png">
+  <br >
+  <div *ngFor="let day of matchData">
+    <strong>{{ day.date }}</strong>
+    <div *ngFor="let match of day.matches">
+      {{ match.homeTeam }} {{ match.homeScore }} -
+      {{ match.awayScore }} {{ match.awayTeam }}
+    </div><br>
+  </div>
+
+</div>
