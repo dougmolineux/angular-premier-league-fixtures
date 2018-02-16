@@ -11,6 +11,11 @@ export class AppComponent {
   matchData = null
   constructor(private http: HttpClient) {
     this.http.get("http://push.api.bbci.co.uk/p?t=morph%3A%2F%2Fdata%2Fbbc-morph-football-scores-match-list-data%2FendDate%2F2018-02-28%2FstartDate%2F2018-02-01%2FtodayDate%2F2018-02-10%2Ftournament%2Fpremier-league%2Fversion%2F2.4.0&c=1").subscribe( bbcData=>{
+      if (!bbcData) {
+        console.log("We didn't get any data :(");
+        return false;
+      }
+      console.log("bbcData", bbcData)
       let data = JSON.parse(bbcData.moments[0].payload);
       data = data.matchData[0].tournamentDatesWithEvents;
       let dates = Object.keys(data);
