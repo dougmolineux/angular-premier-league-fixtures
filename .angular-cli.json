@@ -18,19 +18,13 @@
       "tsconfig": "tsconfig.app.json",
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
-      "serviceWorker": true,
       "styles": [
-        "styles.css",
-        "assets/scss/bootstrap.scss"
+        "styles.css"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
-        "review": "environments/environment.review.ts",
-        "test": "environments/environment.test.ts",
-        "demo": "environments/environment.demo.ts",
-        "staging": "environments/environment.staging.ts",
         "prod": "environments/environment.prod.ts"
       }
     }
@@ -60,8 +54,7 @@
     }
   },
   "defaults": {
-    "styleExt": "scss",
-    "component": {
-    }
+    "styleExt": "css",
+    "component": {}
   }
 }
