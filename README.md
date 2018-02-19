@@ -28,4 +28,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Screenshots
 
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+![Screenshot](https://github.com/dougmolineux/angular-premier-league-fixtures/blob/master/screenshots/Screen%20Shot%202018-02-19%20at%202.07.58%20PM.png?raw=true)
